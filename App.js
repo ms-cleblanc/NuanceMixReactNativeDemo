@@ -114,6 +114,24 @@ function CustomRightBubble( { key, text } ) {
   );
 }
 
+function CustomTTS({ playTts }) {
+  return (
+    <View style={{marginTop: 20}}>
+      <Pressable style={{height:130}}
+        onPress={ playTts }>
+        <RenderHtml 
+          contentWidth={200}
+          onPress={ playTts } 
+          style={{width: '100%', height: 100}}
+          source={{html: '<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://audioxpress.com/assets/upload/images/1/20210412175632_Microsoft-Acquisition-NuanceWeb.jpg" width="150" height="112">'}}
+          startInLoadingState={true}
+        />
+      </Pressable>
+    </View>
+  );
+};
+
+
 const App: () => Node = () => {
   const [modalOneVisible, setModalOneVisible] = React.useState(false);
   const [modalTwoVisible, setModalTwoVisible] = React.useState(false);
@@ -151,14 +169,19 @@ const App: () => Node = () => {
       >
         Here is Paulina speaking Spanish.
       </NuanceMixText>   
+      <NuanceMixText
+        TTS={CustomTTS}
+        viewStyle={styles.staticCustomContainer}
+        ssml='<speak><prosody volume="50">This is so very awesome what</prosody> <prosody volume="90">Microsoft and Nuance</prosody> are doing together!</speak>'
+      />
       <NuanceMixInput
         viewStyle={styles.inputContainer}
         style={styles.inputStyle}
         multiline={true}
-        component={<Icon
+        Listener={<Icon
                       style={styles.micon}
                       name="microphone"
-                      size={20}
+                      size={30}
                       color="#440044"
                     />
                   }
@@ -168,7 +191,7 @@ const App: () => Node = () => {
         style={styles.inputStyle}
         multiline={true}
         language="fra-CAN"
-        component={<Pressable 
+        Listener={<Pressable 
                       style={styles.button}
                     >
                       <Text style={styles.buttontext}>En français</Text>
@@ -447,10 +470,12 @@ centeredView: {
     borderBottomRightRadius: 25,
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
-//    backgroundColor:"#00ff55",
+  },
+  staticCustomContainer: {
+    height: 130,
   },
   staticContainer: {
-    marginTop: 10,
+    marginTop: 30,
     paddingHorizontal: 24,
     marginBottom: 10,
     fontSize: 14,
@@ -472,7 +497,7 @@ centeredView: {
     color: "white",
   },
   inputContainer: {
-    marginTop: 20,
+    marginTop: 10,
     paddingHorizontal: 24,
     fontSize: 14,
     fontWeight: '600',
@@ -484,7 +509,7 @@ centeredView: {
     fontWeight: '600',
     borderWidth: 1,
     marginLeft: 5,
-    marginRight: 5,
+    marginRight: 10,
     borderBottomLeftRadius: 5,
     borderBottomRightRadius: 5,
     borderTopLeftRadius: 5,
