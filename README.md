@@ -54,6 +54,11 @@ Done in 85.87s.
 @ms-cleblanc ➜ /workspaces/NuanceMixReactNativeDemo (main) $ export PATH=/workspaces/NuanceMixReactNativeDemo/node_modules/.bin:$PATH
 ```
 
+## For convenience add this to the end of your codespace .bashrc 
+```
+export PATH=/workspaces/NuanceMixReactNativeDemo/node_modules/.bin:$PATH
+```
+
 ## Build a demo client for your testing, you will want to specify your dialog context tag in either the `params.nlu.json` file or in the App.js that's calling the NuanceMixChat component
 
 Once you've done that you need a terminal where you can login to expo and run `eas build` as shown below. It will provide a QR code that allows you to install the dev client on your device. The next step is to open another terminal window and run `./node_modules/.bin/ngrok http 3000` to provide a tunnel through which you will load you javascript bundle during development. You only need to run the `eas build` step if you change the underlying native code. 
@@ -66,12 +71,12 @@ https://youtu.be/id0Im72UN6w
 https://docs.expo.dev/build-reference/troubleshooting/
 
 ```
-@cleblanc-nuance ➜ /workspaces/mix-react-native-mobile (main) $ expo login
+@cleblanc-nuance ➜ /workspaces/NuanceMixReactNativeDemo (main) $ expo login
 WARNING: The legacy expo-cli does not support Node +17. Migrate to the versioned Expo CLI (npx expo).
 ✔ Username/Email Address: … christopher.j.leblanc@gmail.com
 ✔ Password: … ***********
 
-@cleblanc-nuance ➜ /workspaces/mix-react-native-mobile/NuanceMixReactNativeDemo (main) $ eas build --profile development
+@cleblanc-nuance ➜ /workspaces/NuanceMixReactNativeDemo (main) $ eas build --profile development
 
 Success. You are now logged in as cleblanc189.
 ✔ Select platform › All
@@ -180,9 +185,14 @@ Waiting for build to complete. You can press Ctrl+C to exit.
 
 🍎 Open this link on your iOS devices (or scan the QR code) to install the app:
 https://expo.dev/accounts/cleblanc189/projects/AwesomeProject/builds/922575d4-7572-4abd-8a24-3957df1e638e
+```
 
-@cleblanc-nuance ➜ /workspaces/mix-react-native-mobile (main) $ npx expo start --tunnel --dev-client
-Starting project at /workspaces/mix-react-native-mobile/NuanceMixReactNativeDemo
+## Click the link on your handset, or use the QR code to install the dev client (native code)
+
+## The run your dev application with expo. The QR codes below represent the App.js and javascript components you're developing
+```
+@cleblanc-nuance ➜ /workspaces/NuanceMixReactNativeDemo (main) $ npx expo start --tunnel --dev-client
+Starting project at /workspaces/NuanceMixReactNativeDemo
 Starting Metro Bundler
 Tunnel connected.
 Tunnel ready.
@@ -221,8 +231,8 @@ Tunnel ready.
 
 Logs for your project will appear below. Press Ctrl+C to exit.
 › Reloading apps
-
 ```
+
 ## To Learn more about the native code see the README.md in ./NuanceMixReactNativeDemo/react-native-nuance-mix
 ### The Android and iOS native code is in the react-native-nuance-mix folder is implemented in Java and Objective-C respectively
 ### The components provided by the native plugin react-native-nuance-mix are used in the App.js file in the root of the project. 
