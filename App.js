@@ -48,7 +48,7 @@ function CustomFooterInput({ value, onSubmitEditing, onChangeText }) {
 
 function CustomFooterInputTextOnly({ value, onSubmitEditing, onChangeText }) {
   const inputRef = useRef();
-
+  
   return (
     <View style={{marginTop:8}}>
     <View style={{backgroundColor: "black", height:1, width:"90%", alignSelf:"center"}} />
