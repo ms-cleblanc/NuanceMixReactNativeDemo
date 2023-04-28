@@ -31,6 +31,25 @@ The key's randomart image is:
 Cloning into 'react-native-nuance-mix'...
 Resolving deltas: 100% (51/51), done.
 ```
+## There is a dependency on libopus for the Android client so copy those files over
+```
+@ms-cleblanc ➜ /workspaces/NuanceMixReactNativeDemo (main) $ cp -R react-native-nuance-mix/android/src/main/jniLibs android/app/src/main/
+```
+## To make life easier you can modify your codespaces git info as shown below
+```
+@ms-cleblanc ➜ /workspaces/NuanceMixReactNativeDemo (main) $ cat .git/info/exclude 
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+react-native-nuance-mix
+android/app/src/main/jniLibs
+/workspaces/NuanceMixReactNativeDemo/android/app/src/main/assets/config.json
+/workspaces/NuanceMixReactNativeDemo/ios/config.json
+```
+**NOTE** don't add these to .gitignore as it will break the eas build process...
 
 ## Now add your Mix credentials 
 Just open the project with codespaces and edit the config.json file in your android/app/src/main/assets folder as well as ios/config.json to contain the client_id and client_secret you get when logging into mix.nuance.com
@@ -61,7 +80,7 @@ export PATH=/workspaces/NuanceMixReactNativeDemo/node_modules/.bin:$PATH
 
 ## Build a demo client for your testing, you will want to specify your dialog context tag in either the `params.nlu.json` file or in the App.js that's calling the NuanceMixChat component
 
-Once you've done that you need a terminal where you can login to expo and run `eas build` as shown below. It will provide a QR code that allows you to install the dev client on your device. The next step is to open another terminal window and run `./node_modules/.bin/ngrok http 3000` to provide a tunnel through which you will load you javascript bundle during development. You only need to run the `eas build` step if you change the underlying native code. 
+Once you've done that you need a terminal where you can login to expo and run `eas build` as shown below. It will provide a QR code that allows you to install the dev client on your device. The next step is to open another terminal window and run `ngrok http 3000` to provide a tunnel through which you will load you javascript bundle during development. You only need to run the `eas build` step if you change the underlying native code. 
 
 setting up expo is easy 
 https://youtu.be/id0Im72UN6w
