@@ -13,7 +13,7 @@
     "expo-dev-client": "~2.2.1",
     "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.4",
-    "ngrok": "^4.1.0",
+    "ngrok": "^5.0.0-beta.2",
     "nuance-mix": "./react-native-nuance-mix",
     "react": "18.2.0",
     "react-native": "0.71.6",

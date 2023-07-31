@@ -144,12 +144,6 @@ const App: () => Node = () => {
   request(PERMISSIONS.IOS.MICROPHONE).then((result) => {
     // …
   });
-  request(PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION).then((result) => {
-    // …
-  });
-  request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE).then((result) => {
-    // …
-  });
 
   return (
     <SafeAreaView style={{marginTop:30}}>             
@@ -181,7 +175,7 @@ const App: () => Node = () => {
         Listener={<Icon
                       style={styles.micon}
                       name="microphone"
-                      size={30}
+                      size={20}
                       color="#440044"
                     />
                   }
@@ -498,7 +492,7 @@ centeredView: {
   },
   inputContainer: {
     marginTop: 10,
-    paddingHorizontal: 24,
+    paddingHorizontal: 34,
     fontSize: 14,
     fontWeight: '600',
   },
