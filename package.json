@@ -8,25 +8,25 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "eas-cli": "^3.10.2",
-    "expo": "~48.0.10",
-    "expo-dev-client": "~2.2.1",
-    "expo-splash-screen": "~0.18.1",
-    "expo-status-bar": "~1.4.4",
-    "ngrok": "^5.0.0-beta.2",
+    "eas-cli": "^3.13.1",
+    "expo": "~49.0.0",
+    "expo-dev-client": "~2.3.1",
+    "expo-splash-screen": "~0.19.1",
+    "expo-status-bar": "~1.4.5",
+    "ngrok": "^5.1.0",
     "nuance-mix": "./react-native-nuance-mix",
     "react": "18.2.0",
-    "react-native": "0.71.6",
+    "react-native": "0.72.4",
     "react-native-animated-progress": "^1.0.2",
-    "react-native-permissions": "^3.7.3",
+    "react-native-permissions": "^3.10.0",
     "react-native-progress": "^5.0.0",
     "react-native-render-html": "^6.3.4",
-    "react-native-svg": "13.4.0",
-    "react-native-vector-icons": "^9.2.0",
-    "react-native-webview": "11.26.0"
+    "react-native-svg": "13.9.0",
+    "react-native-vector-icons": "^9.3.0",
+    "react-native-webview": "11.28.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.23.2"
   },
   "private": true
 }
