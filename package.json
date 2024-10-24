@@ -21,16 +21,12 @@
     "react-native-permissions": "^3.10.0",
     "react-native-progress": "^5.0.0",
     "react-native-render-html": "^6.3.4",
-    "react-native-svg": "13.9.0",
-    "react-native-vector-icons": "^9.3.0",
-    "react-native-webview": "11.28.2",
-    "graphql": "^16.8.1",
-    "fast-xml-parser": "^4.2.4",
-    "micromatch": "^4.0.8"
+    "react-native-svg": "13.4.0",
+    "react-native-vector-icons": "^9.2.0",
+    "react-native-webview": "11.26.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.9",
-    "@babel/code-frame": "^7.25.9"
+    "@babel/core": "^7.20.0"
   },
   "private": true
 }
