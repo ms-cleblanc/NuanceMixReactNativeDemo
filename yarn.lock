@@ -4199,23 +4199,23 @@ expo-constants@~14.4.2:
     uuid "^3.3.2"
 
 expo-dev-client@~2.3.1:
-  version "5.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-5.0.0-preview.1.tgz#546083a438e244d93cebf6aa534a9c46c5d85cf4"
-  integrity sha512-Dz4oHo0HKMZ7hx7ecTAA88GQuA+SYZTPRD+W0fBAFpwGuIdWurHriXftYzS2wiQ1JiEuIXImHYGXXLtjsvNCRw==
+  version "5.0.0-preview.6"
+  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-5.0.0-preview.6.tgz#224cf9627bbd65416f29269e6f2a950ccffb4b23"
+  integrity sha512-AhOmeBh12Om6qux2g+jTdOgetnt7RUMMOf2I7Wp/UWdwE2hRk6W7rMfQQCWMEFWGvssjwMh8Jz4qiApE37iL4A==
   dependencies:
-    expo-dev-launcher "5.0.2"
-    expo-dev-menu "6.0.2"
+    expo-dev-launcher "5.0.8"
+    expo-dev-menu "6.0.5"
     expo-dev-menu-interface "1.9.0"
     expo-manifests "~0.15.0"
     expo-updates-interface "~1.0.0"
 
-expo-dev-launcher@5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-5.0.2.tgz#3b15f85a8eca974d13a3c1e70577bdc66a236072"
-  integrity sha512-o6c5vnp/L5ll1GTfMzgG91lBZZ6ISEl8t+K+w1YtSykg2jFkY+GYMo/wSe9OiagwtWxQmTZMoEGYvwKXVPpVuA==
+expo-dev-launcher@5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-5.0.8.tgz#23714bec6d5ba3e8bf06fd64d40a9cd8eb19e32a"
+  integrity sha512-gqPKsaILT6VkLlgFcPs+2TPAQk7TmU/xNM5VDb7sZ1TqqhqLq8M/zRM5DijumNxaiOFf0dGTvzS4J733Vx42Bg==
   dependencies:
     ajv "8.11.0"
-    expo-dev-menu "6.0.2"
+    expo-dev-menu "6.0.5"
     expo-manifests "~0.15.0"
     resolve-from "^5.0.0"
 
@@ -4224,10 +4224,10 @@ expo-dev-menu-interface@1.9.0:
   resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-1.9.0.tgz#5fcf977f3a1840cec21a6f9f1b2cc66af0520813"
   integrity sha512-rTWI2MTWOj9qt67Ar1I3sUe4aWmazO3zYjXyZWY3wIK22UFv7mQfMd0CA3aXCXd8qigVtDVth29fWbeM1bWDoA==
 
-expo-dev-menu@6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-6.0.2.tgz#b596f7ebbadd2fe70b5ef8e8f3ed13adf493c7c5"
-  integrity sha512-rin7+eBW8/XMLsMl+Fhpmc8kIXEsNJi0I4LXMlCqysDkq8i+Hn8PV5LCyuWlf+vV9REhPCLMTfUN2VVNaGLgyw==
+expo-dev-menu@6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-6.0.5.tgz#9d6845379d3119dfec9194a00809c4c2ba1c6d67"
+  integrity sha512-oOCuWiwGcXMAiLtRe6GJKrEVu9hgCdAnGbuIpRqZFc9e7udFCirIdDOOldv3DhX+f+0lyFVFdPo2soo3nbb0Eg==
   dependencies:
     expo-dev-menu-interface "1.9.0"
 
@@ -4864,6 +4864,11 @@ graphql@16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
   integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
+
+graphql@^16.8.1:
+  version "16.9.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.9.0.tgz#1c310e63f16a49ce1fbb230bd0a000e99f6f115f"
+  integrity sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==
 
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
@@ -7674,6 +7679,25 @@ send@^0.18.0:
     range-parser "~1.2.1"
     statuses "2.0.1"
 
+send@^0.19.0:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/send/-/send-0.19.1.tgz#1c2563b2ee4fe510b806b21ec46f355005a369f9"
+  integrity sha512-p4rRk4f23ynFEfcD9LA0xRYngj+IyGiEYyqqOak8kaN0TvNmuxC2dcVeBn62GpCeR2CpWqyHCNScTP91QbAVFg==
+  dependencies:
+    debug "2.6.9"
+    depd "2.0.0"
+    destroy "1.2.0"
+    encodeurl "~2.0.0"
+    escape-html "~1.0.3"
+    etag "~1.8.1"
+    fresh "0.5.2"
+    http-errors "2.0.0"
+    mime "1.6.0"
+    ms "2.1.3"
+    on-finished "2.4.1"
+    range-parser "~1.2.1"
+    statuses "2.0.1"
+
 serialize-error@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/serialize-error/-/serialize-error-6.0.0.tgz#ccfb887a1dd1c48d6d52d7863b92544331fd752b"
@@ -8110,7 +8134,7 @@ tar@6.1.13:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-tar@^6.0.2, tar@^6.0.5:
+tar@^6.0.2, tar@^6.0.5, tar@^6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/tar/-/tar-6.2.1.tgz#717549c541bc3c2af15751bea94b1dd068d4b03a"
   integrity sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==
